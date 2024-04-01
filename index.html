@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>計帳表</title>
+  </head>
+  <body>
+    <header>
+      <h1>記帳工具</h1>
+      <p>投資理財，從記帳開始</p>
+    </header>
+
+    <main>
+      <div id="input-area">
+        <form action="#" method="get">
+          <input
+            type="date"
+            name="日期"
+            placeholder="日期"
+            id="in-date"
+            required
+          />
+          <input
+            type="text"
+            name="內容"
+            placeholder="內容"
+            id="in-content"
+            required
+          />
+          <select name="類別" id="in-type" required>
+            <option value="">請選擇類別</option>
+            <option value="1">飲食</option>
+            <option value="2">治裝</option>
+            <option value="3">交通</option>
+            <option value="4">學習</option>
+            <option value="5">娛樂</option>
+            <option value="6">醫療</option>
+            <option value="7">用品</option>
+            <option value="8">薪資</option>
+            <option value="9">其它</option>
+          </select>
+          <select name="收入或支出" id="in-pl" required>
+            <option value="">收入/支出</option>
+            <option value="1">收入</option>
+            <option value="2">支出</option>
+          </select>
+          <input
+            type="number"
+            name="金額"
+            placeholder="金額"
+            id="in-amount"
+            min="0"
+            required
+          />
+          <button type="button" id="enter">送出</button>
+        </form>
+      </div>
+      <div id="output">
+        <h2>帳目明細表</h2>
+        <table>
+          <thead>
+            <tr>
+              <th class="ot-date">日期</th>
+              <th class="ot-content">明細內容</th>
+              <th class="ot-type">類別</th>
+              <th class="ot-pl">收入/支出</th>
+              <th class="ot-amount">金額</th>
+              <th class="ot-del">刪除</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hide"></tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th></th>
+              <th></th>
+              <th>收入</th>
+              <th>支出</th>
+              <th>損益</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td id="income">0</td>
+              <td id="expendi">0</td>
+              <td id="total">0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p>@2024 Maca</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
