@@ -11,7 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>計帳工具網站</title>
+    <title>計帳表</title>
   </head>
   <body>
     <header>
@@ -66,37 +66,39 @@
       </div>
       <div id="output">
         <h2>帳目明細表</h2>
-        <table>
-          <thead>
-            <tr>
-              <th class="ot-date">日期</th>
-              <th class="ot-content">明細內容</th>
-              <th class="ot-type">類別</th>
-              <th class="ot-pl">收入/支出</th>
-              <th class="ot-amount">金額</th>
-              <th class="ot-del">刪除</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="hide"></tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th></th>
-              <th></th>
-              <th>收入</th>
-              <th>支出</th>
-              <th>損益</th>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td id="income">0</td>
-              <td id="expendi">0</td>
-              <td id="total">0</td>
-            </tr>
-          </tfoot>
-        </table>
+        <div class="table-box">
+          <table>
+            <thead>
+              <tr>
+                <th class="ot-date">日期</th>
+                <th class="ot-content">明細內容</th>
+                <th class="ot-type">類別</th>
+                <th class="ot-pl">收入/支出</th>
+                <th class="ot-amount">金額</th>
+                <th class="ot-del">刪除</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hide"></tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>收入</th>
+                <th>支出</th>
+                <th>損益</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td id="income">0</td>
+                <td id="expendi">0</td>
+                <td id="total">0</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
     </main>
 

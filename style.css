@@ -58,6 +58,12 @@ button {
 }
 
 /* 帳目輸出區 */
+
+.table-box {
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
 table {
   margin: 2rem auto;
   width: 80%;
@@ -86,6 +92,10 @@ tbody {
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
   font-size: 1rem;
+}
+
+.ot-content {
+  width: 7rem;
 }
 
 .ot-date,
