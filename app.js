@@ -36,7 +36,7 @@ function check() {
   let form = document.querySelector("form");
 
   if (formCheck === false) {
-    alert("資料尚未填寫完成");
+    alert("資料有缺誤，再請確認");
   } else {
     creatList(); //建立新的明細表
     form.reset(); //清除表單資料
